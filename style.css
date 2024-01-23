@@ -1,0 +1,119 @@
+:root{
+
+    --primary-color: hsl(183, 93%, 27%);
+    --dark-primary-color: hsl(183, 100%, 22%);
+    --background-color: hsl(183, 38%, 90%);
+
+    --text-color: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+    font-family: verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    max-width: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+}
+
+
+#result-container{
+    width: 40%;
+    min-width: 220px;
+    padding: 20px;
+    color: var(--text-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#result{
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+#resultUnit{
+    font-size: 1.75rem;
+}
+
+#form-container{
+    width: 60%;
+    padding: 24px;
+    background-color: var(--text-color);
+    border: 5px solid var(--primary-color);
+    border-radius: 0 15px 15px 0;
+}
+
+#formHeading{
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+
+}
+label{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, select{
+    font-size: 1rem;
+    margin-bottom: 24px;
+    color: hsl(0, 0%, 40%);
+    padding: 10px 15px;
+    border: 1px solid hsl(0, 0%, 70%);
+    border-radius: 2px;
+
+}
+#inputTemperature{
+    width: 75%;
+    margin-right: -5.75px;
+}
+#temperatureUnit{
+    width: 25%;
+}
+
+#convertInUnit{
+    width: 100%;
+}
+
+input:focus{
+    border: none;
+}
+
+button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--dark-primary-color);
+}
+
+
+
+
+
