@@ -10,25 +10,35 @@
     <main id="container">
         <div id="result-container">
             <div id="result">-</div>
-            <div id="resultUnit"></div>
+            <div id="resultUnit">-</div>
         </div>
+
         <div id="form-container">
 
-            <h2 id="formHeading">Temperature Converter</h2>
-            <label for="inputTemperature">Enter Temperature</label>
-            <input type="text" id="inputTemperature" placeholder="Enter temperature..." value="0">
-            <select id="temperatureUnit">
-                <option value="°C" selected>°C</option>
-                <option value="°F">°F</option>
-                <option value="K">K</option>
-            </select>
+            <div id="form-inputs">
+                
+                <h2 id="formHeading">Temperature Converter</h2>
 
-            <label for="convertInUnit">Convert In</label>
-            <select id="convertInUnit">
-                <option value="°C" selected>Celsius (°C)</option>
-                <option value="°F">Fahrenheit (°F)</option>
-                <option value="K">Kelvin (K)</option>
-            </select>
+                <label for="inputTemperature">Enter Temperature</label>
+                <div id="input-container">
+                    <input type="text" id="inputTemperature" placeholder="Enter temperature..." value="0">
+                    <select id="temperatureUnit">
+                        <option value="°C" selected>°C</option>
+                        <option value="°F">°F</option>
+                        <option value="K">K</option>
+                    </select>
+                </div>
+                
+
+                <label for="convertInUnit">Convert In</label>
+                <select id="convertInUnit">
+                    <option value="°C" selected>Celsius (°C)</option>
+                    <option value="°F">Fahrenheit (°F)</option>
+                    <option value="K">Kelvin (K)</option>
+                </select>
+
+            </div>
+
             <button onclick="convertTemperature()">Convert</button>
         </div>
 
