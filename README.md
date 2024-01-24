@@ -1,2 +1,2 @@
 # TemperatureConverterProgram
-https://mukul-km.github.io/TemperatureConverterProgram/
+https://mukul-km.github.io/temperatureConverterProgram/
